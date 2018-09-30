@@ -1,0 +1,19 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/pm2/bin/pm2 start server.js --name 'nodeapp' -i 0",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop nodeapp",
+    "status": "node ./node_modules/pm2/bin/pm2 status",
+    "delete": "node ./node_modules/pm2/bin/pm2 delete nodeapp"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pm2": "^3.1.3"
+  }
+}
