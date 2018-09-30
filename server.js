@@ -22,13 +22,12 @@ app.get("/",(req,res)=>{
         }else {
             res.status(200).send({
                 Error: false,
-                Message: `{"Your ip adress are",${stdout.toString()}}`,
-                port: PORT
+                Message: `Hello World I am using Port ${PORT} with process id ${process.pid}`
             }) 
         }
     })
 })
 
-app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log(`Node app stared at port@ ${PORT} with process id=${process.pid}`)
 })
