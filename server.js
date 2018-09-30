@@ -22,7 +22,8 @@ app.get("/",(req,res)=>{
         }else {
             res.status(200).send({
                 Error: false,
-                Message: `{"Your ip adress are",${stdout.toString()}}`
+                Message: `{"Your ip adress are",${stdout.toString()}}`,
+                port: PORT
             }) 
         }
     })
