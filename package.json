@@ -11,7 +11,7 @@
     "status1": "node ./node_modules/pm2/bin/pm2 status",
     "delete1": "node ./node_modules/pm2/bin/pm2 delete nodeapp1",
     "start2": "cross-env PORT=4000 node ./node_modules/pm2/bin/pm2 -f start server.js --name 'nodeapp2' -i 0",
-    "restart1": "cross-env PORT=3000 node ./node_modules/pm2/bin/pm2 restart nodeapp2",
+    "restart2": "cross-env PORT=4000 node ./node_modules/pm2/bin/pm2 restart nodeapp2",
     "stop2": "node ./node_modules/pm2/bin/pm2 stop nodeapp2",
     "status2": "node ./node_modules/pm2/bin/pm2 status",
     "delete2": "node ./node_modules/pm2/bin/pm2 delete nodeapp2"
